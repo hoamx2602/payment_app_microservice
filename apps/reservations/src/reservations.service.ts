@@ -16,11 +16,12 @@ export class ReservationsService {
     return this.paymentsService
       .send(CREATE_CHARGE_MSG, createReservationDto.charge)
       .pipe(
-        map(() => {
+        map((res) => {
           return this.reservationRepository.create({
             ...createReservationDto,
             timestamp: new Date(),
             user_id: userId,
+            invoice_id: res.id
           });
         }),
       );
