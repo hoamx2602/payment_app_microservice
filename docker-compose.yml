@@ -5,6 +5,9 @@ services:
       dockerfile: ./apps/reservations/Dockerfile
       target: development
     command: pnpm run start:dev reservations
+    container_name: reservations
+    env_file:
+      - ./apps/reservations/.env
     ports:
       - '3005:3005'
     volumes:
@@ -17,6 +20,9 @@ services:
       dockerfile: ./apps/auth/Dockerfile
       target: development
     command: pnpm run start:dev auth
+    container_name: auth
+    env_file:
+      - ./apps/auth/.env
     ports:
       - '3010:3010'
     volumes:
