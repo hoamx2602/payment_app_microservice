@@ -12,6 +12,7 @@ RUN pnpm install
 
 COPY apps/auth apps/auth
 COPY libs libs
+RUN cd apps/auth && pnpm install
 
 
 RUN pnpm run build
