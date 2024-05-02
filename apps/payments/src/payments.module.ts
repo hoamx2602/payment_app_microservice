@@ -12,6 +12,7 @@ import { LoggerModule } from '@app/common';
       validationSchema: Joi.object({
         MONGODB_URI: Joi.string().required(),
         PORT: Joi.number().required(),
+        STRIPE_SECRET_KEY: Joi.string().required(),
       })
     }),
     LoggerModule
