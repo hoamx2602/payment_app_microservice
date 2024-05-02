@@ -28,6 +28,12 @@ export class ReservationDocument extends AbstractDocument {
 
   @Prop()
   invoice_id: string;
+
+  @Prop()
+  created_at?: number;
+
+  @Prop()
+  updated_at?: number;
 }
 
 export const ReservationSchema = SchemaFactory.createForClass(ReservationDocument);

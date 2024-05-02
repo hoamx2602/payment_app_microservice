@@ -14,6 +14,7 @@ import { DatabaseModule, UserDocument, UserSchema, UsersRepository } from '@app/
     ]),
   ],
   controllers: [UsersController],
-  providers: [UsersService, UsersRepository]
+  providers: [UsersService, UsersRepository],
+  exports: [UsersService],
 })
 export class UsersModule {}
