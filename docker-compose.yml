@@ -37,7 +37,17 @@ services:
     container_name: payments
     env_file:
       - ./apps/payments/.env
-    ports:
-      - '3030:3030'
+    volumes:
+      - .:/usr/src/app
+
+  notifications:
+    build:
+      context: .
+      dockerfile: ./apps/notifications/Dockerfile
+      target: development
+    command: pnpm run start:dev notifications
+    container_name: notifications
+    env_file:
+      - ./apps/notifications/.env
     volumes:
       - .:/usr/src/app
