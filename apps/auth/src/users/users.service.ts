@@ -8,6 +8,6 @@ export class UsersService {
     private readonly usersRepository: UsersRepository
   ) {}
   async create(createUser: CreateUserDto) {
-    return createUser;
+    return this.usersRepository.creat(createUser);
   }
 }

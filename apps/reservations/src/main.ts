@@ -9,6 +9,6 @@ async function bootstrap() {
     whitelist: true
   }));
   app.useLogger(app.get(Logger));
-  await app.listen(3000);
+  await app.listen(3005);
 }
 bootstrap();
