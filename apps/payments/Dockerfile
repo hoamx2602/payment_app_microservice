@@ -1,4 +1,4 @@
-FROM node:alpine as development
+FROM node:alpine As development
 
 WORKDIR /usr/src/app
 
@@ -9,10 +9,12 @@ COPY nest-cli.json nest-cli.json
 
 RUN npm install -g pnpm
 
+RUN pnpm install
+
 COPY apps/payments apps/payments
 COPY libs libs
 
-RUN pnpm install -r
+RUN cd apps/payments && pnpm install
 
 RUN pnpm run build payments
 
@@ -32,4 +34,4 @@ RUN pnpm install --prod
 
 COPY --from=development /usr/src/app/dist ./dist
 
-CMD [ "node", "dist/apps/payments/main" ]
+CMD ["node", "dist/apps/payments/main"]
