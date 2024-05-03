@@ -17,3 +17,23 @@ spec:
       containers:
       - image: asia-southeast1-docker.pkg.dev/paymentapp-422116/notifications/production
         name: production
+        env:
+        - name: PORT
+          value: '3000'
+        - name: GOOGLE_OAUTH_CLIENT_ID
+          value: 692916658986-8us9j14en4evpib24golkhtpb61e2hub.apps.googleusercontent.com
+        - name: SMTP_USER
+          value: hoamx.work@gmail.com
+        - name: GOOGLE_OAUTH_CLIENT_SECRET
+          valueFrom:
+            secretKeyRef:
+              name: google
+              key: clientSecret
+        - name: GOOGLE_OAUTH_REFRESH_TOKEN
+          valueFrom:
+            secretKeyRef:
+              name: google      
+              key: refreshToken
+
+        ports:
+          - containerPort: 3000
