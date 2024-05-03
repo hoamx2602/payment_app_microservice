@@ -1,0 +1,42 @@
+services:
+  e2e:
+    build:
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./specs:/usr/src/app/specs
+    depends_on:
+      - reservations
+      - auth
+      - payments
+      - notifications
+  reservations:
+    image: asia-southeast1-docker.pkg.dev/paymentapp-422116/reservations/production
+    container_name: reservations
+    env_file:
+      - ../apps/reservations/.env
+    ports:
+      - '3005:3005'
+
+  auth:
+    image: asia-southeast1-docker.pkg.dev/paymentapp-422116/auth/production
+    container_name: auth
+    env_file:
+      - ../apps/auth/.env
+    ports:
+      - '3010:3010'
+
+  payments:
+    image: asia-southeast1-docker.pkg.dev/paymentapp-422116/payments/production
+    container_name: payments
+    env_file:
+      - ../apps/payments/.env
+    ports:
+    - '3030:3030'
+
+  notifications:
+    image: asia-southeast1-docker.pkg.dev/paymentapp-422116/notifications/production
+    container_name: notifications
+    env_file:
+      - ../apps/notifications/.env
+    ports:
+      - '3040:3040'
