@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: reservations
+  name: reservations
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: reservations
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: reservations
+    spec:
+      containers:
+      - image: asia-southeast1-docker.pkg.dev/paymentapp-422116/reservations/production
+        name: reservations
