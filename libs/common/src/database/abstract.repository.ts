@@ -28,7 +28,6 @@ export abstract class AbstractRepository<T extends AbstractEntity<T>> {
 
     if (!entity) {
       this.logger.warn('Document not found with where', where);
-      throw new NotFoundException('Entity not found.');
     }
 
     return entity;
