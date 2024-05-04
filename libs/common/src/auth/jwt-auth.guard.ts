@@ -2,8 +2,9 @@ import { CanActivate, ExecutionContext, ForbiddenException, Inject, Injectable, 
 import { Observable, catchError, map, of, tap } from "rxjs";
 import { AUTHENTICATE_MSG, AUTH_SERVICE } from "../constants";
 import { ClientProxy } from "@nestjs/microservices";
-import { UserDto } from "../dto";
+
 import { Reflector } from "@nestjs/core";
+import { User } from "../entities";
 
 @Injectable()
 export class JwtAuthGuard implements CanActivate {
@@ -25,13 +26,13 @@ export class JwtAuthGuard implements CanActivate {
 
     const roles = this.reflector.get<string[]>('roles', context.getHandler());
 
-    return this.authClient.send<UserDto>(AUTHENTICATE_MSG, {
+    return this.authClient.send<User>(AUTHENTICATE_MSG, {
       Authentication: jwt
     }).pipe(
       tap((res) => {
         if (roles) {
           for(const role of roles) {
-            if (!res.roles?.includes(role)) {
+            if (!res.roles?.map((role) => role.name).includes(role)) {
               this.logger.error("The user does not have valid role")
               throw new ForbiddenException();
             }

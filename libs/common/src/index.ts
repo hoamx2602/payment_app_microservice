@@ -1,5 +1,5 @@
 export * from './database';
-export * from './schemas';
+export * from './entities';
 export * from './logger';
 export * from './auth';
 export * from './constants';
