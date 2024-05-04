@@ -12,7 +12,7 @@ async function bootstrap() {
   const app = await NestFactory.create(AuthModule);
   const configService = app.get(ConfigService);
   app.connectMicroservice({
-    transport: Transport.TCP,
+    transport: Transport.GRPC,
     options: {
       protoPath: join(__dirname, '../../../proto/auth.proto'),
       package: AUTH_PACKAGE_NAME,
