@@ -12,7 +12,7 @@ async function bootstrap() {
   app.connectMicroservice({
     transport: Transport.GRPC,
     options: {
-      protoPath: join(__dirname, '../../../proto/notifitcations.proto'),
+      protoPath: join(__dirname, '../../../proto/payments.proto'),
       package: PAYMENTS_PACKAGE_NAME,
       url: configService.getOrThrow("PAYMENTS_GRPC_URL"),
     }
