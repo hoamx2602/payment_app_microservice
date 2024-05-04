@@ -10,7 +10,7 @@ export class AuthService {
     private readonly configService: ConfigService,
     private readonly jwtService: JwtService
   ) {}
-  async login (user: UserDocument, response: Response) {
+  async login (user: UserDocument, response: Response): Promise<string> {
     const tokenPayload = {
       userId: user._id.toHexString(),
     }
@@ -23,5 +23,7 @@ export class AuthService {
     response.cookie('Authentication', token, {
       httpOnly: true,
     });
+
+    return token;
   }
 }
