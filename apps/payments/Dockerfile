@@ -17,6 +17,7 @@ COPY libs libs
 RUN cd apps/payments && pnpm install
 
 RUN pnpm run build payments
+# RUN pnpm run start:dev (using in development mode)
 
 FROM node:alpine as production
 

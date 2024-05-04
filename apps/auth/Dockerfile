@@ -17,6 +17,7 @@ COPY libs libs
 RUN cd apps/auth && pnpm install
 
 RUN pnpm run build auth
+# RUN pnpm run start:dev (using in development mode)
 
 FROM node:alpine as production
 

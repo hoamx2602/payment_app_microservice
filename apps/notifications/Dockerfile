@@ -17,6 +17,7 @@ COPY libs libs
 RUN cd apps/notifications && pnpm install 
 
 RUN pnpm run build notifications
+# RUN pnpm run start:dev (using in development mode)
 
 FROM node:alpine as production
 

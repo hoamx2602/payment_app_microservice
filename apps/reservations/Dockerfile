@@ -16,6 +16,7 @@ COPY libs libs
 RUN cd apps/reservations && pnpm install
 
 RUN pnpm run build reservations
+# RUN pnpm run start:dev (using in development mode)
 
 FROM node:alpine as production
 
