@@ -8,8 +8,6 @@
 import { GrpcMethod, GrpcStreamMethod } from "@nestjs/microservices";
 import { Observable } from "rxjs";
 
-export const protobufPackage = "auth";
-
 export interface Authentication {
   Authentication: string;
 }
@@ -20,6 +18,8 @@ export interface UserMessage {
   password: string;
   roles: string[];
 }
+
+export const AUTH_PACKAGE_NAME = 'auth';
 
 export interface AuthServiceClient {
   authenticate(request: Authentication): Observable<UserMessage>;
