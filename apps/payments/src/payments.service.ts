@@ -1,7 +1,7 @@
-import { NOTIFICATIONS_SERVICE, NOTIFY_EMAIL_EVENT } from '@app/common';
+import { NOTIFICATIONS_SERVICE_NAME, NotificationsServiceClient } from '@app/common';
 import { Inject, Injectable } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
-import { ClientProxy } from '@nestjs/microservices';
+import { ClientGrpc } from '@nestjs/microservices';
 import Stripe from 'stripe';
 import { PaymentsCreateChargeDto } from './dto';
 
@@ -10,10 +10,11 @@ export class PaymentsService {
   private readonly stripe = new Stripe(this.configService.get<string>('STRIPE_SECRET_KEY'), {
     apiVersion: "2024-04-10"
   });
+  private notificationsService: NotificationsServiceClient;
 
   constructor(
     private readonly configService: ConfigService,
-    @Inject(NOTIFICATIONS_SERVICE) private readonly notificationsService: ClientProxy
+    @Inject(NOTIFICATIONS_SERVICE_NAME) private readonly client: ClientGrpc
   ) {}
 
   async createCharge ({ amount, email }: PaymentsCreateChargeDto) {
@@ -28,7 +29,15 @@ export class PaymentsService {
       }
     });
 
-    this.notificationsService.emit(NOTIFY_EMAIL_EVENT, { email, text: `Your payment of $${amount} has completed succesfully` })
+    // this way to set service at runtime, we can use OnModuleInit
+    if (!this.notificationsService) {
+      this.notificationsService = this.client.getService<NotificationsServiceClient>(NOTIFICATIONS_SERVICE_NAME);
+    }
+
+    this.notificationsService.notifyEmail({
+      email,
+      text: `Your payment of $${amount} has completed succesfully`,
+    }).subscribe(() => {});
     
     return paymentIntent;
   }
