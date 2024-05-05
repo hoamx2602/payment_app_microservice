@@ -1,7 +1,7 @@
-import { UserDocument } from '@app/common';
 import { Injectable } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { JwtService } from '@nestjs/jwt';
+import { User } from '@prisma/client';
 import { Response } from 'express';
 
 @Injectable()
@@ -10,9 +10,9 @@ export class AuthService {
     private readonly configService: ConfigService,
     private readonly jwtService: JwtService
   ) {}
-  async login (user: UserDocument, response: Response): Promise<string> {
+  async login (user: User, response: Response): Promise<string> {
     const tokenPayload = {
-      userId: user._id.toHexString(),
+      userId: user.id,
     }
 
     const expires = new Date();

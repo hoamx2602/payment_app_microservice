@@ -1,23 +1,31 @@
-import { Injectable, UnauthorizedException, UnprocessableEntityException } from '@nestjs/common';
+import {
+  Injectable,
+  UnauthorizedException,
+  UnprocessableEntityException,
+} from '@nestjs/common';
 import { CreateUserDto } from './dto/create-user.dto';
-import { UsersRepository } from '@app/common';
 import * as bcrypt from 'bcryptjs';
 import { GetUserDto } from './dto';
+import { PrismaService } from '../prisma.service';
 
 @Injectable()
 export class UsersService {
-  constructor(private readonly usersRepository: UsersRepository) {}
+  constructor(private readonly prismaService: PrismaService) {}
   async create(createUser: CreateUserDto) {
     await this.validateCreateUserDto(createUser);
-    return this.usersRepository.create({
-      ...createUser,
-      password: await bcrypt.hash(createUser.password, 10),
+    return this.prismaService.user.create({
+      data: {
+        ...createUser,
+        password: await bcrypt.hash(createUser.password, 10),
+      },
     });
   }
 
   private async validateCreateUserDto(createUserDto: CreateUserDto) {
-    const existUserEmail = await this.usersRepository.findOne({
-      email: createUserDto.email,
+    const existUserEmail = await this.prismaService.user.findFirst({
+      where: {
+        email: createUserDto.email,
+      },
     });
 
     if (existUserEmail) {
@@ -26,7 +34,9 @@ export class UsersService {
   }
 
   async verifyUser(email: string, password: string) {
-    const user = await this.usersRepository.findOne({ email });
+    const user = await this.prismaService.user.findFirstOrThrow({
+      where: { email },
+    });
     const passwordIsValid = await bcrypt.compare(password, user.password);
 
     if (!passwordIsValid) {
@@ -36,6 +46,10 @@ export class UsersService {
   }
 
   async getUser(getUserDto: GetUserDto) {
-    return this.usersRepository.findOne(getUserDto);
+    return this.prismaService.user.findFirstOrThrow({
+      where: {
+        id: +getUserDto.id,
+      },
+    });
   }
 }
