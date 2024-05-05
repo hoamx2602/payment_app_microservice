@@ -37,6 +37,8 @@ services:
     container_name: payments
     env_file:
       - ./apps/payments/.env
+    ports:
+      - '3035:3035'
     volumes:
       - .:/usr/src/app
 
