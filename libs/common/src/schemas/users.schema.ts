@@ -1,5 +1,6 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { AbstractDocument } from '../database';
+import { Field, ObjectType } from '@nestjs/graphql';
 
 @Schema({
   collection: 'users',
@@ -10,20 +11,25 @@ import { AbstractDocument } from '../database';
   },
   versionKey: false,
 })
+@ObjectType()
 export class UserDocument extends AbstractDocument {
   @Prop()
+  @Field()
   email: string;
 
   @Prop()
   password: string;
 
   @Prop()
+  @Field()
   created_at?: number;
 
   @Prop()
+  @Field()
   updated_at?: number;
 
   @Prop()
+  @Field(() => [String], { nullable: true })
   roles?: string[];
 }
 
