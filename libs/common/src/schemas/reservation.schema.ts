@@ -1,5 +1,6 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { AbstractDocument } from '../database';
+import { Field, ObjectType } from '@nestjs/graphql';
 
 @Schema({
   collection: 'reservations',
@@ -10,27 +11,36 @@ import { AbstractDocument } from '../database';
   },
   versionKey: false,
 })
+@ObjectType()
 export class ReservationDocument extends AbstractDocument {
   @Prop()
-  timestamp: Date
+  @Field()
+  timestamp: Date;
 
   @Prop()
+  @Field()
   start_date: Date;
 
   @Prop()
+  @Field()
   end_date: Date;
 
   @Prop()
+  @Field()
   user_id: string;
 
   @Prop()
+  @Field()
   invoice_id: string;
 
   @Prop()
+  @Field()
   created_at?: number;
 
   @Prop()
+  @Field()
   updated_at?: number;
 }
 
-export const ReservationSchema = SchemaFactory.createForClass(ReservationDocument);
+export const ReservationSchema =
+  SchemaFactory.createForClass(ReservationDocument);
