@@ -3,6 +3,9 @@
 ## Basic System Design
 ![alt text](image/payment_app_system_design.png)
 
+#### Modules
+![Alt](image/modules.svg "Modules")
+
 ## Required
 Node version > v18.19.1
 Docker version 26.1.1

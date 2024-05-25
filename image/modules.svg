@@ -1,0 +1,305 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events" style="overflow: hidden; " viewBox="4.5 40.41 972 156.77">
+  <g id="viewport-20240525173910388" class="svg-pan-zoom_viewport" transform="matrix(0.5427613072156275,0,0,0.5427613072156275,4.999948141102898,40.90943707000451)" style="transform: matrix(0.542761, 0, 0, 0.542761, 4.99995, 40.9094);">
+    <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 283)">
+      <title>dependencies</title>
+      <polygon fill="white" stroke="transparent" points="-4,4 -4,-283 1785,-283 1785,4 -4,4"/>
+      <text text-anchor="start" x="869.51" y="-42.4" font-family="Times-12" font-weight="bold" font-size="14.00">Legend</text>
+      <polygon fill="#ffffb3" stroke="transparent" points="656.5,-10 656.5,-30 676.5,-30 676.5,-10 656.5,-10"/>
+      <text text-anchor="start" x="680.13" y="-15.4" font-family="Times-12" font-size="14.00">  Declarations</text>
+      <polygon fill="#8dd3c7" stroke="transparent" points="769.5,-10 769.5,-30 789.5,-30 789.5,-10 769.5,-10"/>
+      <text text-anchor="start" x="793.23" y="-15.4" font-family="Times-12" font-size="14.00">  Module</text>
+      <polygon fill="#80b1d3" stroke="transparent" points="855.5,-10 855.5,-30 875.5,-30 875.5,-10 855.5,-10"/>
+      <text text-anchor="start" x="879.28" y="-15.4" font-family="Times-12" font-size="14.00">  Bootstrap</text>
+      <polygon fill="#fdb462" stroke="transparent" points="952.5,-10 952.5,-30 972.5,-30 972.5,-10 952.5,-10"/>
+      <text text-anchor="start" x="976.17" y="-15.4" font-family="Times-12" font-size="14.00">  Providers</text>
+      <polygon fill="#fb8072" stroke="transparent" points="1048.5,-10 1048.5,-30 1068.5,-30 1068.5,-10 1048.5,-10"/>
+      <text text-anchor="start" x="1072.23" y="-15.4" font-family="Times-12" font-size="14.00">  Exports</text>
+      <g id="clust1" class="cluster">
+        <title>cluster_AuthModule</title>
+        <polygon fill="none" stroke="black" stroke-dasharray="1,5" points="8,-146 8,-271 786,-271 786,-146 8,-146"/>
+      </g>
+      <g id="clust3" class="cluster">
+        <title>cluster_AuthModule_imports</title>
+        <polygon fill="none" stroke="black" points="438,-154 438,-206 778,-206 778,-154 438,-154"/>
+      </g>
+      <g id="clust6" class="cluster">
+        <title>cluster_AuthModule_providers</title>
+        <polygon fill="none" stroke="black" points="16,-154 16,-206 430,-206 430,-154 16,-154"/>
+      </g>
+      <g id="clust25" class="cluster">
+        <title>cluster_NotificationsModule</title>
+        <polygon fill="none" stroke="black" stroke-dasharray="1,5" points="1365,-146 1365,-271 1577,-271 1577,-146 1365,-146"/>
+      </g>
+      <g id="clust30" class="cluster">
+        <title>cluster_NotificationsModule_providers</title>
+        <polygon fill="none" stroke="black" points="1373,-154 1373,-206 1569,-206 1569,-154 1373,-154"/>
+      </g>
+      <g id="clust31" class="cluster">
+        <title>cluster_PaymentsModule</title>
+        <polygon fill="none" stroke="black" stroke-dasharray="1,5" points="1585,-146 1585,-271 1773,-271 1773,-146 1585,-146"/>
+      </g>
+      <g id="clust36" class="cluster">
+        <title>cluster_PaymentsModule_providers</title>
+        <polygon fill="none" stroke="black" points="1593,-154 1593,-206 1765,-206 1765,-154 1593,-154"/>
+      </g>
+      <g id="clust37" class="cluster">
+        <title>cluster_ReservationsModule</title>
+        <polygon fill="none" stroke="black" stroke-dasharray="1,5" points="794,-70 794,-206 1357,-206 1357,-70 794,-70"/>
+      </g>
+      <g id="clust39" class="cluster">
+        <title>cluster_ReservationsModule_imports</title>
+        <polygon fill="none" stroke="black" points="802,-78 802,-130 928,-130 928,-78 802,-78"/>
+      </g>
+      <g id="clust42" class="cluster">
+        <title>cluster_ReservationsModule_providers</title>
+        <polygon fill="none" stroke="black" points="936,-78 936,-130 1349,-130 1349,-78 936,-78"/>
+      </g>
+      <g id="clust43" class="cluster">
+        <title>cluster_UsersModule</title>
+        <polygon fill="none" stroke="black" stroke-dasharray="1,5" points="344,-70 344,-138 786,-138 786,-70 344,-70"/>
+      </g>
+      <g id="clust46" class="cluster">
+        <title>cluster_UsersModule_exports</title>
+        <polygon fill="none" stroke="black" points="668,-78 668,-130 778,-130 778,-78 668,-78"/>
+      </g>
+      <g id="clust48" class="cluster">
+        <title>cluster_UsersModule_providers</title>
+        <polygon fill="none" stroke="black" points="352,-78 352,-130 660,-130 660,-78 352,-78"/>
+      </g>
+      <!-- HealthModule -->
+      <g id="node1" class="node">
+        <title>HealthModule</title>
+        <polygon fill="#8dd3c7" stroke="black" points="542.37,-198 539.37,-202 518.37,-202 515.37,-198 445.63,-198 445.63,-162 542.37,-162 542.37,-198"/>
+        <text text-anchor="middle" x="494" y="-175.8" font-family="Times,serif" font-size="14.00">HealthModule</text>
+      </g>
+      <!-- AuthModule -->
+      <g id="node4" class="node">
+        <title>AuthModule</title>
+        <polygon fill="#8dd3c7" stroke="black" points="471.55,-263 468.55,-267 447.55,-267 444.55,-263 384.45,-263 384.45,-227 471.55,-227 471.55,-263"/>
+        <text text-anchor="middle" x="428" y="-240.8" font-family="Times,serif" font-size="14.00">AuthModule</text>
+      </g>
+      <!-- HealthModule&#45;&gt;AuthModule -->
+      <g id="edge1" class="edge">
+        <title>HealthModule-&gt;AuthModule</title>
+        <path fill="none" stroke="black" d="M458.67,-198.11C458.67,-198.11 458.67,-216.99 458.67,-216.99"/>
+        <polygon fill="black" stroke="black" points="455.17,-216.99 458.67,-226.99 462.17,-216.99 455.17,-216.99"/>
+      </g>
+      <!-- ReservationsModule -->
+      <g id="node13" class="node">
+        <title>ReservationsModule</title>
+        <polygon fill="#8dd3c7" stroke="black" points="933.86,-198 930.86,-202 909.86,-202 906.86,-198 802.14,-198 802.14,-162 933.86,-162 933.86,-198"/>
+        <text text-anchor="middle" x="868" y="-175.8" font-family="Times,serif" font-size="14.00">ReservationsModule</text>
+      </g>
+      <!-- HealthModule&#45;&gt;ReservationsModule -->
+      <g id="edge13" class="edge">
+        <title>HealthModule-&gt;ReservationsModule</title>
+        <path fill="none" stroke="black" d="M522.02,-161.95C522.02,-147.63 522.02,-130 522.02,-130 522.02,-130 805.82,-130 805.82,-130 805.82,-130 805.82,-151.95 805.82,-151.95"/>
+        <polygon fill="black" stroke="black" points="802.32,-151.95 805.82,-161.95 809.32,-151.95 802.32,-151.95"/>
+      </g>
+      <!-- LoggerModule -->
+      <g id="node2" class="node">
+        <title>LoggerModule</title>
+        <polygon fill="#8dd3c7" stroke="black" points="769.98,-198 766.98,-202 745.98,-202 742.98,-198 670.02,-198 670.02,-162 769.98,-162 769.98,-198"/>
+        <text text-anchor="middle" x="720" y="-175.8" font-family="Times,serif" font-size="14.00">LoggerModule</text>
+      </g>
+      <!-- LoggerModule&#45;&gt;AuthModule -->
+      <g id="edge2" class="edge">
+        <title>LoggerModule-&gt;AuthModule</title>
+        <path fill="none" stroke="black" d="M720,-198.29C720,-220.21 720,-254 720,-254 720,-254 481.72,-254 481.72,-254"/>
+        <polygon fill="black" stroke="black" points="481.72,-250.5 471.72,-254 481.72,-257.5 481.72,-250.5"/>
+      </g>
+      <!-- NotificationsModule -->
+      <g id="node8" class="node">
+        <title>NotificationsModule</title>
+        <polygon fill="#8dd3c7" stroke="black" points="1521.14,-263 1518.14,-267 1497.14,-267 1494.14,-263 1388.86,-263 1388.86,-227 1521.14,-227 1521.14,-263"/>
+        <text text-anchor="middle" x="1455" y="-240.8" font-family="Times,serif" font-size="14.00">NotificationsModule</text>
+      </g>
+      <!-- LoggerModule&#45;&gt;NotificationsModule -->
+      <g id="edge7" class="edge">
+        <title>LoggerModule-&gt;NotificationsModule</title>
+        <path fill="none" stroke="black" d="M744.99,-198.03C744.99,-214.4 744.99,-236 744.99,-236 744.99,-236 1378.84,-236 1378.84,-236"/>
+        <polygon fill="black" stroke="black" points="1378.84,-239.5 1388.84,-236 1378.84,-232.5 1378.84,-239.5"/>
+      </g>
+      <!-- PaymentsModule -->
+      <g id="node10" class="node">
+        <title>PaymentsModule</title>
+        <polygon fill="#8dd3c7" stroke="black" points="1720.99,-263 1717.99,-267 1696.99,-267 1693.99,-263 1607.01,-263 1607.01,-227 1720.99,-227 1720.99,-263"/>
+        <text text-anchor="middle" x="1664" y="-240.8" font-family="Times,serif" font-size="14.00">PaymentsModule</text>
+      </g>
+      <!-- LoggerModule&#45;&gt;PaymentsModule -->
+      <g id="edge9" class="edge">
+        <title>LoggerModule-&gt;PaymentsModule</title>
+        <path fill="none" stroke="black" d="M695.01,-198.04C695.01,-205.75 695.01,-213 695.01,-213 695.01,-213 1645,-213 1645,-213 1645,-213 1645,-216.76 1645,-216.76"/>
+        <polygon fill="black" stroke="black" points="1641.5,-216.76 1645,-226.76 1648.5,-216.76 1641.5,-216.76"/>
+      </g>
+      <!-- LoggerModule&#45;&gt;ReservationsModule -->
+      <g id="edge14" class="edge">
+        <title>LoggerModule-&gt;ReservationsModule</title>
+        <path fill="none" stroke="black" d="M770.11,-180C770.11,-180 791.94,-180 791.94,-180"/>
+        <polygon fill="black" stroke="black" points="791.94,-183.5 801.94,-180 791.94,-176.5 791.94,-183.5"/>
+      </g>
+      <!-- UsersModule -->
+      <g id="node3" class="node">
+        <title>UsersModule</title>
+        <polygon fill="#8dd3c7" stroke="black" points="651.92,-198 648.92,-202 627.92,-202 624.92,-198 560.08,-198 560.08,-162 651.92,-162 651.92,-198"/>
+        <text text-anchor="middle" x="606" y="-175.8" font-family="Times,serif" font-size="14.00">UsersModule</text>
+      </g>
+      <!-- UsersModule&#45;&gt;AuthModule -->
+      <g id="edge3" class="edge">
+        <title>UsersModule-&gt;AuthModule</title>
+        <path fill="none" stroke="black" d="M606,-198.11C606,-217.34 606,-245 606,-245 606,-245 482,-245 482,-245"/>
+        <polygon fill="black" stroke="black" points="482,-241.5 472,-245 482,-248.5 482,-241.5"/>
+      </g>
+      <!-- UsersService  -->
+      <g id="node16" class="node">
+        <title>UsersService </title>
+        <polygon fill="#fb8072" stroke="black" points="769.85,-122 676.15,-122 676.15,-86 769.85,-86 769.85,-122"/>
+        <text text-anchor="middle" x="723" y="-99.8" font-family="Times,serif" font-size="14.00">UsersService </text>
+      </g>
+      <!-- UsersModule&#45;&gt;UsersService  -->
+      <g id="edge19" class="edge">
+        <title>UsersModule-&gt;UsersService </title>
+        <path fill="none" stroke="black" stroke-dasharray="5,2" d="M652.09,-180C657.54,-180 661.21,-180 661.21,-180 661.21,-180 661.21,-104 661.21,-104 661.21,-104 666.16,-104 666.16,-104"/>
+        <polygon fill="black" stroke="black" points="666.16,-107.5 676.16,-104 666.16,-100.5 666.16,-107.5"/>
+      </g>
+      <!-- AuthService -->
+      <g id="node5" class="node">
+        <title>AuthService</title>
+        <ellipse fill="#fdb462" stroke="black" cx="363" cy="-180" rx="59.11" ry="18"/>
+        <text text-anchor="middle" x="363" y="-175.8" font-family="Times,serif" font-size="14.00">AuthService</text>
+      </g>
+      <!-- AuthService&#45;&gt;AuthModule -->
+      <g id="edge4" class="edge">
+        <title>AuthService-&gt;AuthModule</title>
+        <path fill="none" stroke="black" d="M403.27,-193.47C403.27,-193.47 403.27,-216.86 403.27,-216.86"/>
+        <polygon fill="black" stroke="black" points="399.77,-216.86 403.27,-226.86 406.77,-216.86 399.77,-216.86"/>
+      </g>
+      <!-- JwtStrategy -->
+      <g id="node6" class="node">
+        <title>JwtStrategy</title>
+        <ellipse fill="#fdb462" stroke="black" cx="229" cy="-180" rx="56.76" ry="18"/>
+        <text text-anchor="middle" x="229" y="-175.8" font-family="Times,serif" font-size="14.00">JwtStrategy</text>
+      </g>
+      <!-- JwtStrategy&#45;&gt;AuthModule -->
+      <g id="edge5" class="edge">
+        <title>JwtStrategy-&gt;AuthModule</title>
+        <path fill="none" stroke="black" d="M229,-198.02C229,-215.37 229,-239 229,-239 229,-239 374.33,-239 374.33,-239"/>
+        <polygon fill="black" stroke="black" points="374.33,-242.5 384.33,-239 374.33,-235.5 374.33,-242.5"/>
+      </g>
+      <!-- LocalStrategy -->
+      <g id="node7" class="node">
+        <title>LocalStrategy</title>
+        <ellipse fill="#fdb462" stroke="black" cx="89" cy="-180" rx="65.41" ry="18"/>
+        <text text-anchor="middle" x="89" y="-175.8" font-family="Times,serif" font-size="14.00">LocalStrategy</text>
+      </g>
+      <!-- LocalStrategy&#45;&gt;AuthModule -->
+      <g id="edge6" class="edge">
+        <title>LocalStrategy-&gt;AuthModule</title>
+        <path fill="none" stroke="black" d="M89,-198.28C89,-219.32 89,-251 89,-251 89,-251 374.38,-251 374.38,-251"/>
+        <polygon fill="black" stroke="black" points="374.38,-254.5 384.38,-251 374.38,-247.5 374.38,-254.5"/>
+      </g>
+      <!-- NotificationsService -->
+      <g id="node9" class="node">
+        <title>NotificationsService</title>
+        <ellipse fill="#fdb462" stroke="black" cx="1471" cy="-180" rx="90.32" ry="18"/>
+        <text text-anchor="middle" x="1471" y="-175.8" font-family="Times,serif" font-size="14.00">NotificationsService</text>
+      </g>
+      <!-- NotificationsService&#45;&gt;NotificationsModule -->
+      <g id="edge8" class="edge">
+        <title>NotificationsService-&gt;NotificationsModule</title>
+        <path fill="none" stroke="black" d="M1455,-197.76C1455,-197.76 1455,-216.81 1455,-216.81"/>
+        <polygon fill="black" stroke="black" points="1451.5,-216.81 1455,-226.81 1458.5,-216.81 1451.5,-216.81"/>
+      </g>
+      <!-- PaymentsService -->
+      <g id="node11" class="node">
+        <title>PaymentsService</title>
+        <ellipse fill="#fdb462" stroke="black" cx="1679" cy="-180" rx="77.58" ry="18"/>
+        <text text-anchor="middle" x="1679" y="-175.8" font-family="Times,serif" font-size="14.00">PaymentsService</text>
+      </g>
+      <!-- PaymentsService&#45;&gt;PaymentsModule -->
+      <g id="edge10" class="edge">
+        <title>PaymentsService-&gt;PaymentsModule</title>
+        <path fill="none" stroke="black" d="M1683,-198.11C1683,-198.11 1683,-216.99 1683,-216.99"/>
+        <polygon fill="black" stroke="black" points="1679.5,-216.99 1683,-226.99 1686.5,-216.99 1679.5,-216.99"/>
+      </g>
+      <!-- DatabaseModule -->
+      <g id="node12" class="node">
+        <title>DatabaseModule</title>
+        <polygon fill="#8dd3c7" stroke="black" points="920.35,-122 917.35,-126 896.35,-126 893.35,-122 809.65,-122 809.65,-86 920.35,-86 920.35,-122"/>
+        <text text-anchor="middle" x="865" y="-99.8" font-family="Times,serif" font-size="14.00">DatabaseModule</text>
+      </g>
+      <!-- DatabaseModule&#45;&gt;UsersModule -->
+      <g id="edge17" class="edge">
+        <title>DatabaseModule-&gt;UsersModule</title>
+        <path fill="none" stroke="black" d="M831.75,-122.19C831.75,-130.28 831.75,-138 831.75,-138 831.75,-138 615.14,-138 615.14,-138 615.14,-138 615.14,-151.94 615.14,-151.94"/>
+        <polygon fill="black" stroke="black" points="611.64,-151.94 615.14,-161.94 618.64,-151.94 611.64,-151.94"/>
+      </g>
+      <!-- DatabaseModule&#45;&gt;UsersModule -->
+      <g id="edge18" class="edge">
+        <title>DatabaseModule-&gt;UsersModule</title>
+        <path fill="none" stroke="black" d="M853.91,-122.06C853.91,-133.44 853.91,-146 853.91,-146 853.91,-146 633.43,-146 633.43,-146 633.43,-146 633.43,-151.81 633.43,-151.81"/>
+        <polygon fill="black" stroke="black" points="629.93,-151.81 633.43,-161.81 636.93,-151.81 629.93,-151.81"/>
+      </g>
+      <!-- DatabaseModule&#45;&gt;ReservationsModule -->
+      <g id="edge11" class="edge">
+        <title>DatabaseModule-&gt;ReservationsModule</title>
+        <path fill="none" stroke="black" d="M898.25,-122.01C898.25,-122.01 898.25,-151.85 898.25,-151.85"/>
+        <polygon fill="black" stroke="black" points="894.76,-151.85 898.25,-161.85 901.76,-151.85 894.76,-151.85"/>
+      </g>
+      <!-- DatabaseModule&#45;&gt;ReservationsModule -->
+      <g id="edge12" class="edge">
+        <title>DatabaseModule-&gt;ReservationsModule</title>
+        <path fill="none" stroke="black" d="M876.09,-122.01C876.09,-122.01 876.09,-151.85 876.09,-151.85"/>
+        <polygon fill="black" stroke="black" points="872.59,-151.85 876.09,-161.85 879.59,-151.85 872.59,-151.85"/>
+      </g>
+      <!-- ReservationRepository -->
+      <g id="node14" class="node">
+        <title>ReservationRepository</title>
+        <ellipse fill="#fdb462" stroke="black" cx="1241" cy="-104" rx="99.58" ry="18"/>
+        <text text-anchor="middle" x="1241" y="-99.8" font-family="Times,serif" font-size="14.00">ReservationRepository</text>
+      </g>
+      <!-- ReservationRepository&#45;&gt;ReservationsModule -->
+      <g id="edge15" class="edge">
+        <title>ReservationRepository-&gt;ReservationsModule</title>
+        <path fill="none" stroke="black" d="M1241,-122.01C1241,-144.49 1241,-180 1241,-180 1241,-180 944.26,-180 944.26,-180"/>
+        <polygon fill="black" stroke="black" points="944.26,-176.5 934.26,-180 944.26,-183.5 944.26,-176.5"/>
+      </g>
+      <!-- ReservationsService -->
+      <g id="node15" class="node">
+        <title>ReservationsService</title>
+        <ellipse fill="#fdb462" stroke="black" cx="1034" cy="-104" rx="89.74" ry="18"/>
+        <text text-anchor="middle" x="1034" y="-99.8" font-family="Times,serif" font-size="14.00">ReservationsService</text>
+      </g>
+      <!-- ReservationsService&#45;&gt;ReservationsModule -->
+      <g id="edge16" class="edge">
+        <title>ReservationsService-&gt;ReservationsModule</title>
+        <path fill="none" stroke="black" d="M943.87,-104C933.85,-104 927.18,-104 927.18,-104 927.18,-104 927.18,-151.99 927.18,-151.99"/>
+        <polygon fill="black" stroke="black" points="923.68,-151.99 927.18,-161.99 930.68,-151.99 923.68,-151.99"/>
+      </g>
+      <!-- UsersRepository -->
+      <g id="node17" class="node">
+        <title>UsersRepository</title>
+        <ellipse fill="#fdb462" stroke="black" cx="577" cy="-104" rx="75.3" ry="18"/>
+        <text text-anchor="middle" x="577" y="-99.8" font-family="Times,serif" font-size="14.00">UsersRepository</text>
+      </g>
+      <!-- UsersRepository&#45;&gt;UsersModule -->
+      <g id="edge20" class="edge">
+        <title>UsersRepository-&gt;UsersModule</title>
+        <path fill="none" stroke="black" d="M596.86,-121.63C596.86,-121.63 596.86,-151.94 596.86,-151.94"/>
+        <polygon fill="black" stroke="black" points="593.36,-151.94 596.86,-161.94 600.36,-151.94 593.36,-151.94"/>
+      </g>
+      <!-- UsersService -->
+      <g id="node18" class="node">
+        <title>UsersService</title>
+        <ellipse fill="#fdb462" stroke="black" cx="422" cy="-104" rx="61.95" ry="18"/>
+        <text text-anchor="middle" x="422" y="-99.8" font-family="Times,serif" font-size="14.00">UsersService</text>
+      </g>
+      <!-- UsersService&#45;&gt;UsersModule -->
+      <g id="edge21" class="edge">
+        <title>UsersService-&gt;UsersModule</title>
+        <path fill="none" stroke="black" d="M464.77,-117.14C464.77,-131.95 464.77,-154 464.77,-154 464.77,-154 578.57,-154 578.57,-154 578.57,-154 578.57,-154.79 578.57,-154.79"/>
+        <polygon fill="black" stroke="black" points="575.07,-151.94 578.57,-161.94 582.07,-151.94 575.07,-151.94"/>
+      </g>
+    </g>
+  </g>
+</svg>
